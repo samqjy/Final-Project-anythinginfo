@@ -1,0 +1,216 @@
+Country,Area_km,Code
+Afghanistan,652225,AFG
+Albania,28748,ALB
+Algeria,2381741,DZA
+Andorra,468,AND
+Angola,1246700,AGO
+Anguilla,90,AIA
+Antigua and Barbuda,440,ATG
+Argentina,2736690,ARG
+Armenia,28470,ARM
+Aruba,180,ABW
+Australia,7682300,AUS
+Austria,82531,AUT
+Azerbaijan,82659,AZE
+Bahamas,10010,BHM
+Bahrain,770,BHR
+Bangladesh,130170,BGD
+Barbados,430,BRB
+Belarus,202910,BLR
+Belgium,30280,BEL
+Belize,22810,BLZ
+Benin,112760,BEN
+Bermuda,50,BMU
+Bhutan,38117,BTN
+Bolivia,1083300,BOL
+Bosnia and Herzegovina,51200,BIH
+Botswana,566730,BWA
+Brazil,8358140,BRA
+British Virgin Islands,153,VGB
+Brunei Darussalam,5270,BRN
+Bulgaria,108560,BGR
+Burkina Faso,273600,BFA
+Burundi,25680,MMR
+Côte d'Ivoire,318000,CIV
+Cambodia,176520,KHM
+Cameroon,472710,CMR
+Canada,9093510,CAN
+Cape Verde,4030,CPV
+Cayman Islands,240,CYM
+Central African Republic,622980,CAF
+Chad,1259200,TCD
+Chile,743532,CHL
+China,9388211,CHN
+Colombia,1109500,COL
+Comoros,1861,COM
+Congo,341500,COG
+Cook Islands,240,COK
+Costa Rica,51060,CRI
+Croatia,55960,HRV
+Cuba,106449,CUB
+Cyprus,9240,CYP
+Czech Republic,77230,CZE
+Democratic Republic of the Congo,"2,345,410",COD
+Denmark,42430,DNK
+Djibouti,23180,DJI
+Dominica,750,DMA
+Dominican Republic,48320,DOM
+Ecuador,248360,ECU
+Egypt,995450,EGY
+El Salvador,20720,SLV
+Equatorial Guinea,28050,GNO
+Eritrea,101000,ERI
+Estonia,42390,EST
+Ethiopia,1000000,ETH
+Faeroe Islands,1396,FRO
+Falkland Islands,12173,FLK
+Fiji,18270,FJI
+Finland,303890,FIN
+France,547557,FRA
+French Guiana,83534,GUF
+French Polynesia,3660,PYF
+Gabon,257670,GAB
+Gambia,10120,GMB
+Georgia,69490,GEO
+Germany,348540,DEU
+Ghana,227540,GHA
+Gibraltar,7,GIB
+Greece,128900,GRC
+Greenland,410450,GRL
+Grenada,340,GRD
+Guadeloupe,1628,GLP
+Guatemala,107160,GTM
+Guinea,245720,GIN
+Guinea-Bissau,28120,GNB
+Guyana,196850,GUY
+Haiti,27560,HTI
+Honduras,111890,HND
+Hong Kong ,1050,HKG
+Hungary,90530,HUN
+Iceland,100250,ISL
+India,2973190,IND
+Indonesia,1811570,IDN
+Iran,1628550,IRN
+Iraq,434320,IRQ
+Ireland,68890,IRL
+Israel,21640,ISR
+Italy,294140,ITA
+Jamaica,10830,JAM
+Japan,364560,JPN
+Jordan,88780,JOR
+Kazakhstan,2699700,KAZ
+Kenya,569140,KEN
+Kiribati,810,KIR
+Kuwait,17820,KWT
+Kyrgyz,191800,KGZ
+Laos,230800,LAO
+Latvia,62190,LVA
+Lebanon,10230,LBN
+Lesotho,30360,LSO
+Liberia,96320,LBR
+Libya,1759540,LBY
+Lithuania,62675,LTU
+Luxembourg,2590,LUX
+Macao,30.3,MAC
+Macedonia (Republic of),25220,MKD
+Madagascar,581800,MDG
+Malawi,94280,MWI
+Malaysia,328550,MYS
+Maldives,300,MDV
+Mali,1220190,MLI
+Malta,320,MLT
+Marshall Islands,180,MHL
+Martinique,1128,MTQ
+Mauritania,1030700,MRT
+Mauritius,2030,MUS
+Mexico,1943950,MEX
+Micronesia (Federated States of),700,FSM
+Moldova,32880,MDA
+Mongolia,1553560,MNG
+Montenegro,13450,MNE
+Montserrat,68,MSR
+Morocco,446300,MAR
+Mozambique,786380,MOZ
+Myanmar,653080,MMR
+Namibia,823290,NAM
+Naru,21,NRU
+Nepal,143350,NPL
+Netherlands,33670,NLD
+Netherlands Antilles,960,ANT
+New Caledonia,18280,NCL
+New Zealand,263310,NZL
+Nicaragua,120340,NIC
+Niger,1266700,NER
+Nigeria,910770,NGA
+Niue,260,NIU
+North Korea,120540,PRK
+Norway,365245,NOR
+Oman,309500,OMN
+Pakistan,770880,PAK
+Palau,460,PLW
+Panama,74340,PAN
+Papua New Guinea,452860,PNG
+Paraguay,397300,PRY
+Peru,1280000,PER
+Philippines,298170,PHL
+Poland,306210,POL
+Portugal,91600,PRT
+Qatar,11610,QAT
+Réunion,2517,REU
+Romania,230030,ROU
+Russian Federation,17125200,RUS
+Rwanda,24670,RWA
+Saint Helena,410,SHN
+Saint Kitts and Nevis,261,KNA
+Saint Lucia,616,LCA
+Saint Pierre and Miquelon,242,SPM
+Saint Vincent and the Grenadines,389,VCT
+Samoa,2830,WSM
+Sao Tome and Principe,960,STP
+Saudi Arabia,2149690,SAU
+Senegal,192530,SEN
+Serbia,87460,SRB
+Seychelles,455,SYC
+Sierra Leone,72180,SLE
+Singapore,707,SGP
+Slovakia,48088,SVK
+Slovenia,20140,SVN
+Solomon Islands,27990,SLB
+Somalia,627340,SOM
+South Africa,1213090,ZAF
+South Korea,98480,KOR
+Spain,500210,ESP
+Sri Lanka,62710,LKA
+Sudan,2376000,SDN
+Suriname,156000,SUR
+Swaziland,17200,SWZ
+Sweden,407340,SWE
+Switzerland,39516,CHE
+Syria,183630,SYR
+Taiwan,35980,TWN
+Tajikistan,139960,TJK
+Tanzania,885800,TZA
+Thailand,510890,THA
+Timor-Leste,14870,TLS
+Togo,54390,TGO
+Tonga,720,TON
+Trinidad and Tobago,5130,TTO
+Tunisia,155360,TUN
+Turkey,769630,TUR
+Turkmenistan,469930,TKM
+Turks and Caicos Islands,950,TCA
+Uganda,200520,UGA
+Ukraine,579320,UKR
+United Arab Emirates,83600,ARE
+United Kingdom,241930,GBR
+United States of America,9147420,USA
+Uruguay,175020,URY
+Uzbekistan,425400,UZB
+Vanuatu,12190,VUT
+Venezuela,882050,VEN
+Vietnam,310070,VNM
+Wallis and Futuna Islands,274,WLF
+Western Sahara,266000,ESH
+Yemen,527970,YEM
+Zambia,743390,ZMB
+Zimbabwe,386850,ZWE
