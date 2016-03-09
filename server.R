@@ -9,6 +9,4 @@ shinyServer(function(input, output) {
   output$map <- renderPlotly({
     Emission(input$years)
   })
-  
-  
 })
