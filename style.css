@@ -1,0 +1,17 @@
+div.outer {
+	position: fixed;
+	top: 60px;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	overflow: hidden;
+  	padding: 0;
+}
+
+#controls {
+	background-color: white;
+	padding: 0 30px 30px 30px;
+	opacity: 0.75;
+}
+
+
