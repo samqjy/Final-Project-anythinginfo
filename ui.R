@@ -2,48 +2,55 @@ library(shiny)
 library(plotly)
 library(dplyr)
 
-
-shinyUI(navbarPage("Emissions",
+shinyUI(navbarPage("Carbon Emissions",
   
-  # First tab panel                                   
+  # First tab panel that includes the homepage   
+  tabPanel("Home",
+           
+           div(class="outer",
+               
+               # Include CSS file
+              (includeCSS("style.CSS"))),
+              
+              # Include HTML file
+              includeHTML("index.html")),
+  
+  # Second tabel panel displaying about us page
+  tabPanel("About Us",
+           
+           # Include summary HTML file
+           includeHTML("about.html")),
+  
+  # Third tab panel displaying the chloropleth map
   tabPanel("Carbon Emissions Worldwide",
-    
-    div(class="outer",
       
-        tags$head(
-          includeCSS("style.css")
-        ),
-        
+      # Side panel for the slider widget  
       absolutePanel(id = "controls", class = "panel panel-default", fixed = TRUE,
                     draggable = TRUE, top = 60, left = "auto", right = 20, bottom = "auto", 
                     width = 330, height = "auto",
                     
                     h2("Carbon Emissions"),
                     
+                    # SliderInput widget allowing users to input their choice of year
                     sliderInput("years", label = h3("Select Year"), min = 1960,
-                                max = 2014, value = 1, sep = "")
+                                max = 2014, value = 1, sep = "")),  
+      
+                    # Mainpanel displaying the chloropleth map  
+                    mainPanel(
+                      plotlyOutput('chloropleth')
+                    )),
   
-      ),  
+  # Fourth tab panel displaying the chart
+  tabPanel("By Country",
         
-      mainPanel(
-          plotlyOutput('map')
-      )
-    )
-  ),
-  
-  # Second tab panel
-  tabPanel("Time Series",
-    div(class="outer",
-        tags$head(
-          includeCSS("style.css")
-        ),
-        
+        # Side panel containing the country choices   
         absolutePanel(id = "controls", class = "panel panel-default", fixed = TRUE,
                       draggable = TRUE, top = 60, left = "auto", right = 20, bottom = "auto", 
                       width = 330, height = "auto",
                       
                       h2("Carbon Emissions"),
                       
+                      # SelectInput widget for users to select their country of choice
                       selectInput("countries", label = h3("Select Country"),
                                   choices = list("Afghanistan"="Afghanistan","Albania"="Albania","Algeria"="Algeria",
                                                  "Andorra"="Andorra","Angola"="Angola","Anguilla"="Anguilla",
@@ -95,8 +102,17 @@ shinyUI(navbarPage("Emissions",
                                                  "United Kingdom"="United Kingdom","United States of America"="United States of America","Uruguay"="Uruguay","Uzbekistan"="Uzbekistan",
                                                  "Vanuatu"="Vanuatu","Venezuela"="Venezuela","Vietnam"="Vietnam","Wallis and Futuna Islands"="Wallis and Futuna Islands",
                                                  "Western Sahara"="Western Sahara","Yemen"="Yemen","Zambia"="Zambia","Zimbabwe"="Zimbabwe"),
-                                  selected = "United States")
-    )
-  )
-  )
+                                  selected = "United States")),
+        
+                        mainPanel(
+                          plotlyOutput('chart')
+                        )),
+  # Fifth tab panel for summary information
+  tabPanel("Summary",
+           
+           # Include summary HTML file
+           
+           #includeHTML("summary.html") #When I include the HTML version of the Rmd file it overwrites the chloropleth map
+           includeMarkdown("summary.Rmd")
+           )
 ))

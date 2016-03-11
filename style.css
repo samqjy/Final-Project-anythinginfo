@@ -1,8 +1,13 @@
+body {
+	font-family: "Helvetica Neue";
+	background-image: url("http://tinyurl.com/hf3nt7f");
+}
+
 div.outer {
 	position: fixed;
 	top: 60px;
-  	left: 0;
-  	right: 0;
+  	left: 130px;
+  	right: 130px;
   	bottom: 0;
   	overflow: hidden;
   	padding: 0;
@@ -12,6 +17,24 @@ div.outer {
 	background-color: white;
 	padding: 0 30px 30px 30px;
 	opacity: 0.75;
+}
+
+div.intro {
+	width: 800px;
+	height: 500px;
+	padding-left: 130px;
+	text-align: justify;
+	display: inline-block;
+}
+
+
+h1 {
+	padding-left: 130px;
+}
+
+nav.navbar.navbar-default.navbar-static-top {
+	background-color: #333;
+	color: white;
 }
 
 
