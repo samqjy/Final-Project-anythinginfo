@@ -2,6 +2,7 @@ library(shiny)
 library(plotly)
 library(dplyr)
 source("chloroplethMap.R")
+source("CountryEmision.R")
 
 shinyServer(function(input, output) {
   
@@ -12,6 +13,6 @@ shinyServer(function(input, output) {
   
   # Build interactive chart
   output$chart <- renderPlotly({
-    blah(input$countries)
-  })
+    country_Emissions(input$countries)
+  }) 
 })
