@@ -10,7 +10,7 @@ shinyUI(navbarPage("Carbon Emissions",
            div(class="outer",
                
                # Include CSS file
-              (includeCSS("style.CSS"))),
+              (includeCSS("style.css"))),
               
               # Include HTML file
               includeHTML("index.html")),
