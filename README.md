@@ -1,3 +1,3 @@
 # Final-Project-anythinginfo
 
-The **dataset** is in the data folder.
+URL to the published app: https://samqjy.shinyapps.io/Final-Project-anythinginfo/ 
