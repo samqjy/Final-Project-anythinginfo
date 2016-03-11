@@ -1,0 +1,68 @@
+
+
+```{r echo=FALSE, message=FALSE}
+library(dplyr)
+library(plotly)
+library(knitr)
+options(stringsAsFactors = FALSE)
+
+
+carbon <- read.csv("data/Carbon_Emission_Data.csv")
+tem_change <- read.csv("data/tem_change.csv")
+top_ten_emission <- tem_change %>% 
+                      arrange(desc(tem_change)) %>%
+                        head(n = 10) %>%
+                          select(Country, tem_change, X1960, X2014)
+
+top_ten_emission <- arrange(top_ten_emission, desc(tem_change))
+average_tem_change <- mean(tem_change$tem_change) %>%
+                        round(digits=2)
+num_above_avg <- tem_change %>%
+                  filter(tem_change < average_tem_change) %>%
+                    ncol()
+colnames(top_ten_emission) <- c('Top 10 Carbon Emission Countries',  'Temperature Change since 1960',
+                                'Carbon Emission in 1960', 'Carbon Emission in 2014')
+
+
+
+```
+
+## Global Carbon Emission Since 1960
+
+
+### Summary
+
+The global average temperature change is **`r average_tem_change`** celsius. There are **`r num_above_avg`** countries above the global average temperature change. Since 1960, **all** countries have a positive change in carbon emission and **all** the countries have a rise in the temperature change as well.
+
+<br><br>
+
+
+####Here is a table about the top ten temperature change countries.
+
+`r kable(top_ten_emission)`
+<br><br>
+
+
+
+
+
+#### Here is a map of global temperature change.
+```{r, echo=FALSE, message=FALSE}
+l <- list(color = toRGB("grey"), width = 0.5)
+
+# specify map projection/options
+g <- list(
+  showframe = FALSE,
+  showcoastlines = FALSE,
+  projection = list(type = 'Mercator')
+)
+
+plot_ly(tem_change, z = tem_change, text = Country, locations = Code, type = 'choropleth',
+        color = tem_change, colors = 'Oranges', marker = list(line = l),
+        colorbar = list(ticksuffix = '˚C', title = 'Global Temperature change since 1960')) %>%
+  layout(title = '2Global Temperature change since 1960<br>Source:<a href="http://berkeleyearth.lbl.gov/country-list/">Berkeley Earth</a>',
+         geo = g)
+```
+
+#### Conclusion
+From the table and the map we can see that the top ten countries are either near **the Arctic Circle**, or near **Middle East** and Mediterranean.
