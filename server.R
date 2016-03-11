@@ -14,5 +14,6 @@ shinyServer(function(input, output) {
   # Build interactive chart
   output$chart <- renderPlotly({
     country_Emissions(input$countries)
+
   }) 
 })

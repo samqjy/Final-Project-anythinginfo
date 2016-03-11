@@ -19,7 +19,8 @@ country_Emissions <- function(country, dataCount = df, cols = col ){
   #creating data frame of country's emissions and the years
   data <- data.frame(Emissions = dataCount, Year = cols)
   
-  plot_ly(data, x = cols, y = Emissions ,  type= "scatter", color ='Reds', mode = "markers")
+
+  plot_ly(data, x = cols, y = Emissions , type= "scatter", color ='Reds', mode = "markers")
 }
 
 #test for function
