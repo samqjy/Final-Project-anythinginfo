@@ -106,13 +106,5 @@ shinyUI(navbarPage("Carbon Emissions",
         
                         mainPanel(
                           plotlyOutput('chart')
-                        )),
-  # Fifth tab panel for summary information
-  tabPanel("Summary",
-           
-           # Include summary HTML file
-           
-           #includeHTML("summary.html") #When I include the HTML version of the Rmd file it overwrites the chloropleth map
-           includeMarkdown("summary.Rmd")
-           )
+                        ))
 ))
