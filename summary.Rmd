@@ -1,5 +1,10 @@
 ```{r echo=FALSE, message=FALSE}
+library(dplyr)
+library(plotly)
+library(knitr)
 source("summary.R")
+tem_change <- read.csv("data/tem_change.csv")
+
 ```
 
 ## Global Carbon Emission Since 1960
@@ -7,14 +12,14 @@ source("summary.R")
 
 ### Summary
 
-The global average temperature change is **`r average_tem_change`** celsius. There are **`r num_above_avg`** countries above the global average temperature change. Since 1960, **all** countries have a positive change in carbon emission and **all** the countries have a rise in the temperature change as well.
+The global average temperature change is **`r get_avg(tem_change)`** celsius. There are **`r get_num_above_avg(tem_change)`** countries above the global average temperature change. Since 1960, **all** countries have a positive change in carbon emission and **all** the countries have a rise in the temperature change as well.
 
 <br><br>
 
 
 ####Here is a table about the top ten temperature change countries.
 
-`r kable(top_ten_emission)`
+`r get_top_ten(tem_change)`
 <br><br>
 
 
@@ -23,7 +28,7 @@ The global average temperature change is **`r average_tem_change`** celsius. The
 
 #### Here is a map of global temperature change.
 
-`r temp_graph`
+`r get_graph(tem_change)`
 
 #### Conclusion
 From the table and the map we can see that the top ten countries are either near **the Arctic Circle**, or near **Middle East** and Mediterranean.
